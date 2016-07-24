@@ -16,7 +16,7 @@ http://myapp.dev/ (ローカルマシン内)">
 
 http://myapp.dev/ (ローカルマシン内)">
 <meta property="og:image" content="http://kudotty.com/banner/basecamp.png">
-<meta property="og:updated_time" content="2016-07-24T05:49:38.000Z">
+<meta property="og:updated_time" content="2016-07-24T13:27:42.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo severよりもだいぶ便利な、Basecamp製Pow(Mac開発環境向け全自動DNS+HTTPサーバー)">
 <meta name="twitter:description" content="GitHub Pagesのブログ作成ツールをHexoに決めて、本格的に使い出して気になり出したのは、Macでhexoコマンドを打つたびに出る、このエラーメッセージ。エラーの実害はないが、どうにかならんもんかとHexo Issue #1326を見て知った、全自動DNS+HTTPサーバーのPow。何ができるかというと、開発中のプロジェクトに、
@@ -289,7 +289,7 @@ ga('send', 'pageview');
 <li><a href="http://myapp.192.168.1.2.xip.io" target="_blank" rel="external">http://myapp.192.168.1.2.xip.io</a> (ローカルネットワーク内)</li>
 </ul>
 <p>のアドレスでアクセスできます。ちょっとググるとRuby on RailsとかRackアプリのRuby系の話がよく出てきますが、Node.jsのHexoでも使えます。</p>
-<h2 id="インストールはコマンド一発-curl-get-pow-cx-sh-だが、"><a href="#インストールはコマンド一発-curl-get-pow-cx-sh-だが、" class="headerlink" title="インストールはコマンド一発 curl get.pow.cx | sh だが、"></a>インストールはコマンド一発 curl get.pow.cx | sh だが、</h2><p><a href="http://pow.cx/" target="_blank" rel="external"><img src="http://i.imgur.com/7puLR5x.png" alt="Pow - Zero-configuration Rack server for Mac OS X"></a></p>
+<h2 id="インストールはコマンド一発-curl-get-pow-cx-sh-だが、"><a href="#インストールはコマンド一発-curl-get-pow-cx-sh-だが、" class="headerlink" title="インストールはコマンド一発 curl get.pow.cx | sh だが、"></a>インストールはコマンド一発 curl get.pow.cx | sh だが、</h2><p><a href="http://pow.cx/" target="_blank" rel="external"><img src="/screenshot/pow.cx.png" alt="Pow - Zero-configuration Rack server for Mac OS X"></a></p>
 <h2 id="何をどうされるのかわからないコマンドは叩きたくないですよね"><a href="#何をどうされるのかわからないコマンドは叩きたくないですよね" class="headerlink" title="何をどうされるのかわからないコマンドは叩きたくないですよね"></a>何をどうされるのかわからないコマンドは叩きたくないですよね</h2><p>僕は叩いちゃったけど。</p>
 <p>Powのインストールプロセス詳細と動作原理は、以下のページが詳しいです。ここを読むと、安心してコマンド叩けると思います。<br><a href="http://d.hatena.ne.jp/passingloop/20110926/reviewing_pow_installation" target="_blank" rel="external">Pow をインストールするとシステムに何をされるのか確認する - passingloopの日記</a></p>
 <p>Powのカスタマイズのヒントなら、以下のページがわかりやすい。<br><a href="http://marutanm.hatenablog.com/entry/20110608/p1" target="_blank" rel="external">先生！.devじゃないドメインでPowを使いたいんです！！オフラインでも使いたいんです！！！ - Meltdown Countdown rev.</a></p>
@@ -322,9 +322,9 @@ ga('send', 'pageview');
 </ul>
 <p>で、さくっと解決しました。</p>
 <h2 id="シンボリックリンク1本貼るだけでサーバーが全自動で動いてくれるのは、とても快適"><a href="#シンボリックリンク1本貼るだけでサーバーが全自動で動いてくれるのは、とても快適" class="headerlink" title="シンボリックリンク1本貼るだけでサーバーが全自動で動いてくれるのは、とても快適"></a>シンボリックリンク1本貼るだけでサーバーが全自動で動いてくれるのは、とても快適</h2><p>今後は諸々の開発環境向けに、/etc/hostsとかWebサーバーの設定を弄らずにすみますな。Powを今はcurlで入れてる状態ですが、Powは安定してバージョンアップもなさそうなんで、Homebrewでの入れ直しはしなくていいかなと。</p>
-<p>存在しないプロジェクトのアドレスにアクセスした時のエラー画面が、また良かった。<br><a href="http://myapp.dev/" target="_blank" rel="external"><img src="http://i.imgur.com/0XL2Rsj.png" alt="Application not found"></a></p>
+<p>存在しないプロジェクトのアドレスにアクセスした時のエラー画面が、これまた気が利いてた。<br><a href="http://myapp.dev/" target="_blank" rel="external"><img src="/screenshot/myapp.dev.png" alt="Application not found"></a></p>
 <h2 id="開発環境がMacの方には、Powほんとオススメです。xip-ioも"><a href="#開発環境がMacの方には、Powほんとオススメです。xip-ioも" class="headerlink" title="開発環境がMacの方には、Powほんとオススメです。xip.ioも"></a>開発環境がMacの方には、Powほんとオススメです。xip.ioも</h2><p>同じくBasecampが運営してる、xip.ioも激しく便利。</p>
-<p><a href="http://xip.io/" target="_blank" rel="external"><img src="http://i.imgur.com/bIfhR81.png" alt="xip.io: wildcard DNS for everyone"></a></p>
+<p><a href="http://xip.io/" target="_blank" rel="external"><img src="/screenshot/xip.io.png" alt="xip.io: wildcard DNS for everyone"></a></p>
 <p><a href="http://qiita.com/tady/items/b7b46486fb3175dac0b1" target="_blank" rel="external">ローカルDNSを立てずにホスト名をIPアドレスに解決する超絶簡単な方法 - Qiita</a><br><a href="https://www.infoscoop.org/blogjp/2014/07/14/google-oauth2%E3%81%A8%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%82%B5%E3%83%BC%E3%83%90-xip-io-%E3%81%AE%E8%A6%AA%E5%92%8C%E6%80%A7%E3%81%8C%E7%B4%A0%E6%95%B5%E3%81%99%E3%81%8E%E3%82%8B%E4%BB%B6/" target="_blank" rel="external">Google OAuth2とドメインサーバ xip.io の親和性が素敵すぎる件 | infoScoop開発者ブログ</a></p>
 <h2 id="Powスクリーンキャスト"><a href="#Powスクリーンキャスト" class="headerlink" title="Powスクリーンキャスト"></a>Powスクリーンキャスト</h2><div class="video-container"><iframe src="//player.vimeo.com/video/51984307" frameborder="0" allowfullscreen></iframe></div>
         
