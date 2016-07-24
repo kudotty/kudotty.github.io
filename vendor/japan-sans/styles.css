@@ -1,0 +1,10 @@
+/* japanese */
+@font-face {
+   font-family: 'JapanSans100';
+   font-style: normal;
+   font-weight: normal;
+   src: url('JapanSans100.eot');
+   src: url('JapanSans100.eot?#iefix') format('embedded-opentype'),
+   url('JapanSans100.woff') format('woff'),
+   url('JapanSans100.ttf') format('truetype');
+ }

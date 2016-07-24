@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>人生をDevOps @kudotty</title>
+  
+  <link href="http://kudotty.com//feed/atom.xml" rel="self"/>
+  <link href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+  <link href="http://kudotty.com/"/>
+  <updated>2016-07-24T05:36:05.000Z</updated>
+  <id>http://kudotty.com/</id>
+  
+  <author>
+    <name>@kudotty</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo severよりもだいぶ便利な、Basecamp製Pow(Mac開発環境向け全自動DNS+HTTPサーバー)</title>
+    <link href="http://kudotty.com/hexo-sever-pow-xipio/"/>
+    <id>http://kudotty.com/hexo-sever-pow-xipio/</id>
+    <published>2016-07-23T15:15:53.000Z</published>
+    <updated>2016-07-24T05:36:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="GitHub-Pagesのブログ作成ツールをHexoに決めて、本格的に使い出して気になり出したのは、"><a href="#GitHub-Pagesのブログ作成ツールをHexoに決めて、本格的に使い出して気になり出したのは、" class="headerlink" title="GitHub Pagesのブログ作成ツールをHexoに決めて、本格的に使い出して気になり出したのは、"></a>GitHub Pagesのブログ作成ツールをHexoに決めて、本格的に使い出して気になり出したのは、</h2><p>Macでhexoコマンドを打つたびに出る、このエラーメッセージ。<br><script src="//gist.github.com/bc845d2de3a793c5eb0f9ae8988f3577.js"></script><br>エラーの実害はないが、どうにかならんもんかと<a href="https://github.com/hexojs/hexo/issues/1326" target="_blank" rel="external">Hexo Issue #1326</a>を見て知った、全自動DNS+HTTPサーバーのPow。何ができるかというと、開発中のプロジェクトに、</p>
+<ul>
+<li><a href="http://myapp.dev/" target="_blank" rel="external">http://myapp.dev/</a> (ローカルマシン内)</li>
+<li><a href="http://myapp.192.168.1.2.xip.io" target="_blank" rel="external">http://myapp.192.168.1.2.xip.io</a> (ローカルネットワーク内)</li>
+</ul>
+<p>のアドレスでアクセスできます。ちょっとググるとRuby on RailsとかRackアプリのRuby系の話がよく出てきますが、Node.jsのHexoでも使えます。</p>
+<h2 id="インストールはコマンド一発-curl-get-pow-cx-sh-だが、"><a href="#インストールはコマンド一発-curl-get-pow-cx-sh-だが、" class="headerlink" title="インストールはコマンド一発 curl get.pow.cx | sh だが、"></a>インストールはコマンド一発 curl get.pow.cx | sh だが、</h2><p><a href="http://pow.cx/" target="_blank" rel="external"><img src="http://i.imgur.com/7puLR5x.png" alt="Pow - Zero-configuration Rack server for Mac OS X"></a></p>
+<h2 id="何をどうされるのかわからないコマンドは叩きたくないですよね"><a href="#何をどうされるのかわからないコマンドは叩きたくないですよね" class="headerlink" title="何をどうされるのかわからないコマンドは叩きたくないですよね"></a>何をどうされるのかわからないコマンドは叩きたくないですよね</h2><p>僕は叩いちゃったけど。</p>
+<p>Powのインストールプロセス詳細と動作原理は、以下のページが詳しいです。ここを読むと、安心してコマンド叩けると思います。<br><a href="http://d.hatena.ne.jp/passingloop/20110926/reviewing_pow_installation" target="_blank" rel="external">Pow をインストールするとシステムに何をされるのか確認する - passingloopの日記</a></p>
+<p>Powのカスタマイズのヒントなら、以下のページがわかりやすい。<br><a href="http://marutanm.hatenablog.com/entry/20110608/p1" target="_blank" rel="external">先生！.devじゃないドメインでPowを使いたいんです！！オフラインでも使いたいんです！！！ - Meltdown Countdown rev.</a></p>
+<p><a href="http://pow.cx/" target="_blank" rel="external">Pow公式サイト</a>から、トラブルシューティングのページにたどりにくい。トラブルシューティングは、GitHubのプロジェクトWikiにあります。<br><a href="https://github.com/basecamp/pow/wiki/Troubleshooting" target="_blank" rel="external">Troubleshooting - basecamp/pow Wiki</a></p>
+<p>僕のぶつかったトラブルは、</p>
+<ul>
+<li>有線ネットワーク接続</li>
+<li>Wi-Fiはオフ</li>
+<li>Wi-Fiをオンにするとインターネット共有</li>
+<li>→動かない</li>
+</ul>
+<p>この状態で、何度もcurlで入れたりHomebrewで入れたり、インストールと再インストールを繰り返しても動かなかった。そこでトラブルシューティングページを参考に、</p>
+<ul>
+<li>Powアンインストール</li>
+<li>Mac再起動</li>
+<li>インターネット共有をオフ</li>
+<li>Wi-Fiをオンオフ</li>
+<li>Powインストール</li>
+<li>→動いた</li>
+</ul>
+<p>これで動くようになりました。また、</p>
+<ul>
+<li>ローカルネットワーク内の、iPadでxip.io形式でアクセスできる</li>
+<li>→iPhoneではアクセスできない</li>
+</ul>
+<p>というトラブルは、</p>
+<ul>
+<li>iPhoneのWi-Fiをオフオン</li>
+<li>→動いた</li>
+</ul>
+<p>で、さくっと解決しました。</p>
+<h2 id="シンボリックリンク1本貼るだけでサーバーが全自動で動いてくれるのは、とても快適"><a href="#シンボリックリンク1本貼るだけでサーバーが全自動で動いてくれるのは、とても快適" class="headerlink" title="シンボリックリンク1本貼るだけでサーバーが全自動で動いてくれるのは、とても快適"></a>シンボリックリンク1本貼るだけでサーバーが全自動で動いてくれるのは、とても快適</h2><p>今後は諸々の開発環境向けに、/etc/hostsとかWebサーバーの設定を弄らずにすみますな。Powを今はcurlで入れてる状態ですが、Powは安定してバージョンアップもなさそうなんで、Homebrewでの入れ直しはしなくていいかなと。</p>
+<p>存在しないプロジェクトのアドレスにアクセスした時のエラー画面が、また良かった。<br><a href="http://myapp.dev/" target="_blank" rel="external"><img src="http://i.imgur.com/0XL2Rsj.png" alt="Application not found"></a></p>
+<h2 id="開発環境がMacの方には、Powほんとオススメです。xip-ioも"><a href="#開発環境がMacの方には、Powほんとオススメです。xip-ioも" class="headerlink" title="開発環境がMacの方には、Powほんとオススメです。xip.ioも"></a>開発環境がMacの方には、Powほんとオススメです。xip.ioも</h2><p>同じくBasecampが運営してる、xip.ioも激しく便利。</p>
+<p><a href="http://xip.io/" target="_blank" rel="external"><img src="http://i.imgur.com/bIfhR81.png" alt="xip\.io: wildcard DNS for everyone"></a></p>
+<p><a href="http://qiita.com/tady/items/b7b46486fb3175dac0b1" target="_blank" rel="external">ローカルDNSを立てずにホスト名をIPアドレスに解決する超絶簡単な方法 - Qiita</a><br><a href="https://www.infoscoop.org/blogjp/2014/07/14/google-oauth2%E3%81%A8%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%82%B5%E3%83%BC%E3%83%90-xip-io-%E3%81%AE%E8%A6%AA%E5%92%8C%E6%80%A7%E3%81%8C%E7%B4%A0%E6%95%B5%E3%81%99%E3%81%8E%E3%82%8B%E4%BB%B6/" target="_blank" rel="external">Google OAuth2とドメインサーバ xip.io の親和性が素敵すぎる件 | infoScoop開発者ブログ</a></p>
+<h2 id="Powスクリーンキャスト"><a href="#Powスクリーンキャスト" class="headerlink" title="Powスクリーンキャスト"></a>Powスクリーンキャスト</h2><div class="video-container"><iframe src="//player.vimeo.com/video/51984307" frameborder="0" allowfullscreen></iframe></div>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;GitHub-Pagesのブログ作成ツールをHexoに決めて、本格的に使い出して気になり出したのは、&quot;&gt;&lt;a href=&quot;#GitHub-Pagesのブログ作成ツールをHexoに決めて、本格的に使い出して気になり出したのは、&quot; class=&quot;headerlink&quot;
+    
+    </summary>
+    
+      <category term="GitHub Pagesでブログ作成" scheme="http://kudotty.com/category/github-pages-blog/"/>
+    
+    
+      <category term="Mac" scheme="http://kudotty.com/tag/mac/"/>
+    
+      <category term="Pow" scheme="http://kudotty.com/tag/pow/"/>
+    
+      <category term="xip.io" scheme="http://kudotty.com/tag/xipio/"/>
+    
+      <category term="静的サイトジェネレーター" scheme="http://kudotty.com/tag/static-site-generator/"/>
+    
+      <category term="Hexo" scheme="http://kudotty.com/tag/hexo/"/>
+    
+      <category term="Node.js" scheme="http://kudotty.com/tag/nodejs/"/>
+    
+      <category term="GitHub Pages" scheme="http://kudotty.com/tag/github-pages/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>静的サイトジェネレーターを、拡張性重視でひたすら比較検討したら、HexoとDocPadの二択だった</title>
+    <link href="http://kudotty.com/hexo-and-docpad/"/>
+    <id>http://kudotty.com/hexo-and-docpad/</id>
+    <published>2016-07-19T08:19:16.000Z</published>
+    <updated>2016-07-24T03:58:01.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="GitHub-Pagesでブログを始めるために"><a href="#GitHub-Pagesでブログを始めるために" class="headerlink" title="GitHub Pagesでブログを始めるために"></a>GitHub Pagesでブログを始めるために</h2><p><a href="https://www.staticgen.com/" target="_blank" rel="external">StaticGen - Top Open-Source Static Site Generators</a>を上から7段目、28コぐらいを徹底的に調べた結果、HexoとDocPadの２つに絞り込んだ。</p>
+<ul>
+<li><a href="https://hexo.io/" target="_blank" rel="external">Hexo - fast, simple &amp; powerful blog framework</a></li>
+<li><a href="http://docpad.org/" target="_blank" rel="external">DocPad - Streamlined Web Development</a></li>
+</ul>
+<h2 id="まずは、手軽なHexoを使ってブログを構築してみた"><a href="#まずは、手軽なHexoを使ってブログを構築してみた" class="headerlink" title="まずは、手軽なHexoを使ってブログを構築してみた"></a>まずは、手軽なHexoを使ってブログを構築してみた</h2><p><a href="https://hexo.io/" target="_blank" rel="external"><img src="http://i.imgur.com/36jOjbk.png" alt="Hexo"></a></p>
+<p>Hexo公式の<a href="https://hexo.io/themes/" target="_blank" rel="external">テーマ一覧</a>を全てチェックした結果、「使える」テーマは以下のページと同意見だった。</p>
+<p><a href="https://tea3.github.io/p/hexo-blog-theme-16/" target="_blank" rel="external">hexoでblogを書くためのオススメtheme(テーマ)一覧 - tea Photography</a></p>
+<h2 id="Hexoテーマは、このIcarusをチョイスしカスタマイズ"><a href="#Hexoテーマは、このIcarusをチョイスしカスタマイズ" class="headerlink" title="Hexoテーマは、このIcarusをチョイスしカスタマイズ"></a>Hexoテーマは、このIcarusをチョイスしカスタマイズ</h2><p><a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="external"><img src="http://i.imgur.com/wMuHZym.png" alt="Hexoテーマ Icarus"></a></p>
+<h2 id="Hexoの使い方は、以下のページがしっかりとわかりやすく書いてあると思う"><a href="#Hexoの使い方は、以下のページがしっかりとわかりやすく書いてあると思う" class="headerlink" title="Hexoの使い方は、以下のページがしっかりとわかりやすく書いてあると思う"></a>Hexoの使い方は、以下のページがしっかりとわかりやすく書いてあると思う</h2><p><a href="http://hatobane.github.io/hexo/hexo-command/" target="_blank" rel="external">Hexo コマンド|Akanetrip</a><br><a href="http://hatobane.github.io/hexo/Hexo-config/" target="_blank" rel="external">Hexo 設定ファイル|Akanetrip</a></p>
+<h2 id="DocPadも実際に触ってみた"><a href="#DocPadも実際に触ってみた" class="headerlink" title="DocPadも実際に触ってみた"></a>DocPadも実際に触ってみた</h2><ul>
+<li>DocPadでは、テーマではなくスケルトン。パッケージやリポジトリが自動インストールされる</li>
+<li>docpad run起動時のスケルトンの選択肢が20前後あるが、どれもどうもピンとこない</li>
+<li>スケルトン自動インストール直後の表示が崩れてる</li>
+<li>Unsupportedなスケルトンは、自動インストールでエラーが出たりする</li>
+</ul>
+<p>つまり、DocPadはスケルトンを使わずスクラッチでやれってことなんだろう。</p>
+<h2 id="結論-やりたいことがブログであればHexo。ブログ以外を作りたくてプラグインに惚れればDocPad"><a href="#結論-やりたいことがブログであればHexo。ブログ以外を作りたくてプラグインに惚れればDocPad" class="headerlink" title="結論: やりたいことがブログであればHexo。ブログ以外を作りたくてプラグインに惚れればDocPad"></a>結論: やりたいことがブログであればHexo。ブログ以外を作りたくてプラグインに惚れればDocPad</h2><p>DocPadプラグインの全リスト<br><a href="https://www.npmjs.com/browse/keyword/docpad-plugin" target="_blank" rel="external">npm - packages with keyword ‘docpad-plugin’</a></p>
+<div class="video-container"><iframe src="//www.youtube.com/embed/EqdRW3I7CIc" frameborder="0" allowfullscreen></iframe></div>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;GitHub-Pagesでブログを始めるために&quot;&gt;&lt;a href=&quot;#GitHub-Pagesでブログを始めるために&quot; class=&quot;headerlink&quot; title=&quot;GitHub Pagesでブログを始めるために&quot;&gt;&lt;/a&gt;GitHub Pagesでブログを
+    
+    </summary>
+    
+      <category term="GitHub Pagesでブログ作成" scheme="http://kudotty.com/category/github-pages-blog/"/>
+    
+    
+      <category term="静的サイトジェネレーター" scheme="http://kudotty.com/tag/static-site-generator/"/>
+    
+      <category term="Hexo" scheme="http://kudotty.com/tag/hexo/"/>
+    
+      <category term="Node.js" scheme="http://kudotty.com/tag/nodejs/"/>
+    
+      <category term="GitHub Pages" scheme="http://kudotty.com/tag/github-pages/"/>
+    
+      <category term="Hexo Icarusテーマ" scheme="http://kudotty.com/tag/hexo-theme-icarus/"/>
+    
+      <category term="DocPad" scheme="http://kudotty.com/tag/docpad/"/>
+    
+  </entry>
+  
+</feed>
