@@ -5,7 +5,7 @@
   <link href="http://kudotty.com//feed/atom.xml" rel="self"/>
   <link href="http://pubsubhubbub.appspot.com/" rel="hub"/>
   <link href="http://kudotty.com/"/>
-  <updated>2016-07-24T05:36:05.000Z</updated>
+  <updated>2016-07-24T05:49:38.000Z</updated>
   <id>http://kudotty.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://kudotty.com/hexo-sever-pow-xipio/"/>
     <id>http://kudotty.com/hexo-sever-pow-xipio/</id>
     <published>2016-07-23T15:15:53.000Z</published>
-    <updated>2016-07-24T05:36:05.000Z</updated>
+    <updated>2016-07-24T05:49:38.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="GitHub-Pagesのブログ作成ツールをHexoに決めて、本格的に使い出して気になり出したのは、"><a href="#GitHub-Pagesのブログ作成ツールをHexoに決めて、本格的に使い出して気になり出したのは、" class="headerlink" title="GitHub Pagesのブログ作成ツールをHexoに決めて、本格的に使い出して気になり出したのは、"></a>GitHub Pagesのブログ作成ツールをHexoに決めて、本格的に使い出して気になり出したのは、</h2><p>Macでhexoコマンドを打つたびに出る、このエラーメッセージ。<br><script src="//gist.github.com/bc845d2de3a793c5eb0f9ae8988f3577.js"></script><br>エラーの実害はないが、どうにかならんもんかと<a href="https://github.com/hexojs/hexo/issues/1326" target="_blank" rel="external">Hexo Issue #1326</a>を見て知った、全自動DNS+HTTPサーバーのPow。何ができるかというと、開発中のプロジェクトに、</p>
 <ul>
@@ -63,7 +63,7 @@
 <h2 id="シンボリックリンク1本貼るだけでサーバーが全自動で動いてくれるのは、とても快適"><a href="#シンボリックリンク1本貼るだけでサーバーが全自動で動いてくれるのは、とても快適" class="headerlink" title="シンボリックリンク1本貼るだけでサーバーが全自動で動いてくれるのは、とても快適"></a>シンボリックリンク1本貼るだけでサーバーが全自動で動いてくれるのは、とても快適</h2><p>今後は諸々の開発環境向けに、/etc/hostsとかWebサーバーの設定を弄らずにすみますな。Powを今はcurlで入れてる状態ですが、Powは安定してバージョンアップもなさそうなんで、Homebrewでの入れ直しはしなくていいかなと。</p>
 <p>存在しないプロジェクトのアドレスにアクセスした時のエラー画面が、また良かった。<br><a href="http://myapp.dev/" target="_blank" rel="external"><img src="http://i.imgur.com/0XL2Rsj.png" alt="Application not found"></a></p>
 <h2 id="開発環境がMacの方には、Powほんとオススメです。xip-ioも"><a href="#開発環境がMacの方には、Powほんとオススメです。xip-ioも" class="headerlink" title="開発環境がMacの方には、Powほんとオススメです。xip.ioも"></a>開発環境がMacの方には、Powほんとオススメです。xip.ioも</h2><p>同じくBasecampが運営してる、xip.ioも激しく便利。</p>
-<p><a href="http://xip.io/" target="_blank" rel="external"><img src="http://i.imgur.com/bIfhR81.png" alt="xip\.io: wildcard DNS for everyone"></a></p>
+<p><a href="http://xip.io/" target="_blank" rel="external"><img src="http://i.imgur.com/bIfhR81.png" alt="xip.io: wildcard DNS for everyone"></a></p>
 <p><a href="http://qiita.com/tady/items/b7b46486fb3175dac0b1" target="_blank" rel="external">ローカルDNSを立てずにホスト名をIPアドレスに解決する超絶簡単な方法 - Qiita</a><br><a href="https://www.infoscoop.org/blogjp/2014/07/14/google-oauth2%E3%81%A8%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%82%B5%E3%83%BC%E3%83%90-xip-io-%E3%81%AE%E8%A6%AA%E5%92%8C%E6%80%A7%E3%81%8C%E7%B4%A0%E6%95%B5%E3%81%99%E3%81%8E%E3%82%8B%E4%BB%B6/" target="_blank" rel="external">Google OAuth2とドメインサーバ xip.io の親和性が素敵すぎる件 | infoScoop開発者ブログ</a></p>
 <h2 id="Powスクリーンキャスト"><a href="#Powスクリーンキャスト" class="headerlink" title="Powスクリーンキャスト"></a>Powスクリーンキャスト</h2><div class="video-container"><iframe src="//player.vimeo.com/video/51984307" frameborder="0" allowfullscreen></iframe></div>]]></content>
     
@@ -76,19 +76,19 @@
       <category term="GitHub Pagesでブログ作成" scheme="http://kudotty.com/category/github-pages-blog/"/>
     
     
+      <category term="静的サイトジェネレーター" scheme="http://kudotty.com/tag/static-site-generator/"/>
+    
+      <category term="Hexo" scheme="http://kudotty.com/tag/hexo/"/>
+    
+      <category term="GitHub Pages" scheme="http://kudotty.com/tag/github-pages/"/>
+    
+      <category term="Node.js" scheme="http://kudotty.com/tag/nodejs/"/>
+    
       <category term="Mac" scheme="http://kudotty.com/tag/mac/"/>
     
       <category term="Pow" scheme="http://kudotty.com/tag/pow/"/>
     
       <category term="xip.io" scheme="http://kudotty.com/tag/xipio/"/>
-    
-      <category term="静的サイトジェネレーター" scheme="http://kudotty.com/tag/static-site-generator/"/>
-    
-      <category term="Hexo" scheme="http://kudotty.com/tag/hexo/"/>
-    
-      <category term="Node.js" scheme="http://kudotty.com/tag/nodejs/"/>
-    
-      <category term="GitHub Pages" scheme="http://kudotty.com/tag/github-pages/"/>
     
   </entry>
   
@@ -133,11 +133,11 @@
     
       <category term="Hexo" scheme="http://kudotty.com/tag/hexo/"/>
     
-      <category term="Node.js" scheme="http://kudotty.com/tag/nodejs/"/>
+      <category term="Hexo Icarusテーマ" scheme="http://kudotty.com/tag/hexo-theme-icarus/"/>
     
       <category term="GitHub Pages" scheme="http://kudotty.com/tag/github-pages/"/>
     
-      <category term="Hexo Icarusテーマ" scheme="http://kudotty.com/tag/hexo-theme-icarus/"/>
+      <category term="Node.js" scheme="http://kudotty.com/tag/nodejs/"/>
     
       <category term="DocPad" scheme="http://kudotty.com/tag/docpad/"/>
     
