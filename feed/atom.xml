@@ -97,16 +97,16 @@
     <link href="http://kudotty.com/hexo-and-docpad/"/>
     <id>http://kudotty.com/hexo-and-docpad/</id>
     <published>2016-07-19T08:19:16.000Z</published>
-    <updated>2016-07-24T07:23:51.000Z</updated>
+    <updated>2016-07-24T09:45:17.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="GitHub-Pagesでブログを始めるために"><a href="#GitHub-Pagesでブログを始めるために" class="headerlink" title="GitHub Pagesでブログを始めるために"></a>GitHub Pagesでブログを始めるために</h2><p><a href="https://www.staticgen.com/" target="_blank" rel="external">StaticGen - Top Open-Source Static Site Generators</a>を上から7段目、28コぐらいを徹底的に調べた結果、HexoとDocPadの２つに絞り込んだ。</p>
 <ul>
 <li><a href="https://hexo.io/" target="_blank" rel="external">Hexo - fast, simple &amp; powerful blog framework</a></li>
 <li><a href="http://docpad.org/" target="_blank" rel="external">DocPad - Streamlined Web Development</a></li>
 </ul>
-<h2 id="まずは、手軽なHexoを使ってブログを構築してみた"><a href="#まずは、手軽なHexoを使ってブログを構築してみた" class="headerlink" title="まずは、手軽なHexoを使ってブログを構築してみた"></a>まずは、手軽なHexoを使ってブログを構築してみた</h2><p><a href="https://hexo.io/" target="_blank" rel="external"><img src="http://i.imgur.com/36jOjbk.png" alt="Hexo"></a></p>
+<h2 id="まずは、手軽なHexoを使ってブログを構築してみた"><a href="#まずは、手軽なHexoを使ってブログを構築してみた" class="headerlink" title="まずは、手軽なHexoを使ってブログを構築してみた"></a>まずは、手軽なHexoを使ってブログを構築してみた</h2><p><a href="https://hexo.io/" target="_blank" rel="external"><img src="http://i.imgur.com/x3bEPjQ.png" alt="Hexo - fast, simple &amp; powerful blog framework"></a></p>
 <p>Hexo公式の<a href="https://hexo.io/themes/" target="_blank" rel="external">テーマ一覧</a>を全てチェックした結果、「使える」テーマは以下のページと同意見だった。</p>
-<p><a href="https://tea3.github.io/p/hexo-blog-theme-16/" target="_blank" rel="external">hexoでblogを書くためのオススメtheme(テーマ)一覧 - tea Photography</a></p>
+<p><a href="https://tea4.github.io/p/hexo-blog-theme-16/" target="_blank" rel="external">hexoでblogを書くためのオススメtheme(テーマ)一覧 - tea Photography</a></p>
 <h2 id="Hexoテーマは、このIcarusをチョイスしカスタマイズ"><a href="#Hexoテーマは、このIcarusをチョイスしカスタマイズ" class="headerlink" title="Hexoテーマは、このIcarusをチョイスしカスタマイズ"></a>Hexoテーマは、このIcarusをチョイスしカスタマイズ</h2><p><a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="external"><img src="http://i.imgur.com/wMuHZym.png" alt="Hexoテーマ Icarus"></a></p>
 <h2 id="Hexoの使い方は、以下のページがしっかりとわかりやすく書いてあると思う"><a href="#Hexoの使い方は、以下のページがしっかりとわかりやすく書いてあると思う" class="headerlink" title="Hexoの使い方は、以下のページがしっかりとわかりやすく書いてあると思う"></a>Hexoの使い方は、以下のページがしっかりとわかりやすく書いてあると思う</h2><p><a href="http://hatobane.github.io/hexo/hexo-command/" target="_blank" rel="external">Hexo コマンド|Akanetrip</a><br><a href="http://hatobane.github.io/hexo/Hexo-config/" target="_blank" rel="external">Hexo 設定ファイル|Akanetrip</a></p>
 <h2 id="DocPadも実際に触ってみた"><a href="#DocPadも実際に触ってみた" class="headerlink" title="DocPadも実際に触ってみた"></a>DocPadも実際に触ってみた</h2><ul>
