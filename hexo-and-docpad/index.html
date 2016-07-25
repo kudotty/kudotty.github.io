@@ -18,7 +18,7 @@ DocPad - Streamlined Web Deve">
 Hexo - fast, simple &amp;amp; powerful blog framework
 DocPad - Streamlined Web Deve">
 <meta property="og:image" content="http://kudotty.com/banner/hexo.png">
-<meta property="og:updated_time" content="2016-07-24T13:12:09.000Z">
+<meta property="og:updated_time" content="2016-07-25T13:05:28.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="静的サイトジェネレーターを拡張性重視でひたすら比較検討したら、HexoとDocPadの二択だった">
 <meta name="twitter:description" content="GitHub Pagesでブログを始めるためにStaticGen - Top Open-Source Static Site Generatorsを上から7段目、28コぐらいを徹底的に調べた結果、HexoとDocPadの２つに絞り込んだ。
@@ -31,7 +31,7 @@ DocPad - Streamlined Web Deve">
     
 
     
-        <link rel="alternate" href="/feed/atom.xml" title="人生をDevOps @kudotty" type="application/atom+xml" />
+        <link rel="alternate" href="/feed/rss2.xml" title="人生をDevOps @kudotty" type="application/atom+xml" />
     
 
     
@@ -197,7 +197,7 @@ ga('send', 'pageview');
                     
                     
                     <td>
-                        <a href="/feed/atom.xml" target="_blank" title="rss" class=tooltip>
+                        <a href="/feed/rss2.xml" target="_blank" title="rss" class=tooltip>
                             <i class="fa fa-rss"></i>
                         </a>
                     </td>
@@ -286,22 +286,22 @@ ga('send', 'pageview');
            
         
             
-            <h2 id="GitHub-Pagesでブログを始めるために"><a href="#GitHub-Pagesでブログを始めるために" class="headerlink" title="GitHub Pagesでブログを始めるために"></a>GitHub Pagesでブログを始めるために</h2><p><a href="https://www.staticgen.com/" target="_blank" rel="external">StaticGen - Top Open-Source Static Site Generators</a>を上から7段目、28コぐらいを徹底的に調べた結果、HexoとDocPadの２つに絞り込んだ。</p>
+            <h2 id="GitHub-Pagesでブログを始めるために"><a href="#GitHub-Pagesでブログを始めるために" class="headerlink" title="GitHub Pagesでブログを始めるために"></a>GitHub Pagesでブログを始めるために</h2><p><a href="https://www.staticgen.com/" target="_blank" rel="external">StaticGen - Top Open-Source Static Site Generators</a>を上から7段目、28コぐらいを徹底的に調べた結果、<strong>HexoとDocPadの２つ</strong>に絞り込んだ。</p>
 <ul>
 <li><a href="https://hexo.io/" target="_blank" rel="external">Hexo - fast, simple &amp; powerful blog framework</a></li>
 <li><a href="http://docpad.org/" target="_blank" rel="external">DocPad - Streamlined Web Development</a></li>
 </ul>
 <h2 id="まずは、手軽なHexoを使ってブログを構築してみた"><a href="#まずは、手軽なHexoを使ってブログを構築してみた" class="headerlink" title="まずは、手軽なHexoを使ってブログを構築してみた"></a>まずは、手軽なHexoを使ってブログを構築してみた</h2><p><a href="https://hexo.io/" target="_blank" rel="external"><img src="/screenshot/hexo.io.png" alt="Hexo - fast, simple &amp; powerful blog framework"></a></p>
-<p>Hexo公式の<a href="https://hexo.io/themes/" target="_blank" rel="external">テーマ一覧</a>を全てチェックした結果、「使える」テーマは以下のページと同意見だった。</p>
+<p>Hexo公式の<a href="https://hexo.io/themes/" target="_blank" rel="external">テーマ一覧</a>を全てチェックした結果、<strong>「使える」</strong>テーマは以下のページと同意見だった。</p>
 <p><a href="https://tea4.github.io/p/hexo-blog-theme-16/" target="_blank" rel="external">hexoでblogを書くためのオススメtheme(テーマ)一覧 - tea Photography</a></p>
 <h2 id="Hexoテーマは、このIcarusをチョイスしカスタマイズ"><a href="#Hexoテーマは、このIcarusをチョイスしカスタマイズ" class="headerlink" title="Hexoテーマは、このIcarusをチョイスしカスタマイズ"></a>Hexoテーマは、このIcarusをチョイスしカスタマイズ</h2><p><a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="external"><img src="/screenshot/hexo-theme-icarus.png" alt="Hexoテーマ Icarus"></a></p>
 <h2 id="Hexoの使い方は、以下のページがしっかりとわかりやすく書いてあると思う"><a href="#Hexoの使い方は、以下のページがしっかりとわかりやすく書いてあると思う" class="headerlink" title="Hexoの使い方は、以下のページがしっかりとわかりやすく書いてあると思う"></a>Hexoの使い方は、以下のページがしっかりとわかりやすく書いてあると思う</h2><p><a href="http://hatobane.github.io/hexo/hexo-command/" target="_blank" rel="external">Hexo コマンド|Akanetrip</a><br><a href="http://hatobane.github.io/hexo/Hexo-config/" target="_blank" rel="external">Hexo 設定ファイル|Akanetrip</a></p>
 <h2 id="DocPadも実際に触ってみた"><a href="#DocPadも実際に触ってみた" class="headerlink" title="DocPadも実際に触ってみた"></a>DocPadも実際に触ってみた</h2><p><a href="http://docpad.org/" target="_blank" rel="external"><img src="/screenshot/docpad.org.png" alt="DocPad - Streamlined Web Development"></a></p>
 <ul>
-<li>DocPadでは、テーマではなくスケルトン。パッケージやリポジトリが自動インストールされる</li>
-<li>docpad run起動時のスケルトンの選択肢が20前後あるが、どれもどうもピンとこない</li>
-<li>スケルトン自動インストール直後の表示が崩れてる</li>
-<li>Unsupportedなスケルトンは、自動インストールでエラーが出たりする</li>
+<li><strong>DocPadでは、テーマではなくスケルトン</strong>。パッケージやリポジトリが自動インストールされる</li>
+<li>docpad run起動時のスケルトンの選択肢が20前後あるが、<strong>どれもどうもピンとこない</strong></li>
+<li>スケルトン自動インストール直後の<strong>表示が崩れてる</strong></li>
+<li>Unsupportedなスケルトンは、<strong>自動インストールでエラー</strong>が出たりする</li>
 </ul>
 <p>つまり、DocPadはスケルトンを使わずスクラッチでやれってことなんだろう。</p>
 <h2 id="結論-やりたいことがブログであればHexo。ブログ以外を作りたくてプラグインに惚れればDocPad"><a href="#結論-やりたいことがブログであればHexo。ブログ以外を作りたくてプラグインに惚れればDocPad" class="headerlink" title="結論: やりたいことがブログであればHexo。ブログ以外を作りたくてプラグインに惚れればDocPad"></a>結論: やりたいことがブログであればHexo。ブログ以外を作りたくてプラグインに惚れればDocPad</h2><p>DocPadプラグインの全リスト<br><a href="https://www.npmjs.com/browse/keyword/docpad-plugin" target="_blank" rel="external">npm - packages with keyword ‘docpad-plugin’</a></p>
@@ -316,7 +316,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://kudotty.com/hexo-and-docpad/" data-id="cir1ti7cg0000ujx1x2r6t3cl" class="article-share-link"><i class="fa fa-share"></i>共有</a>
+    <a data-url="http://kudotty.com/hexo-and-docpad/" data-id="cir21t2dr00001sx18v4hni5v" class="article-share-link"><i class="fa fa-share"></i>共有</a>
 <script>
     (function ($) {
         // Prevent duplicate binding

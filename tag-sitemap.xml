@@ -2,64 +2,64 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>http://kudotty.com/tag/hexo-theme-icarus/</loc>
-        <lastmod>2016-07-24T13:12:09.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://kudotty.com/tag/docpad/</loc>
-        <lastmod>2016-07-24T13:12:09.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://kudotty.com/tag/static-site-generator/</loc>
-        <lastmod>2016-07-24T13:27:42.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://kudotty.com/tag/hexo/</loc>
-        <lastmod>2016-07-24T13:27:42.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://kudotty.com/tag/github-pages/</loc>
-        <lastmod>2016-07-24T13:27:42.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://kudotty.com/tag/nodejs/</loc>
-        <lastmod>2016-07-24T13:27:42.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://kudotty.com/tag/mac/</loc>
-        <lastmod>2016-07-24T13:27:42.000Z</lastmod>
+        <lastmod>2016-07-25T13:04:24.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://kudotty.com/tag/pow/</loc>
-        <lastmod>2016-07-24T13:27:42.000Z</lastmod>
+        <lastmod>2016-07-25T13:04:24.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://kudotty.com/tag/xipio/</loc>
-        <lastmod>2016-07-24T13:27:42.000Z</lastmod>
+        <lastmod>2016-07-25T13:04:24.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://kudotty.com/tag/static-site-generator/</loc>
+        <lastmod>2016-07-25T13:05:28.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://kudotty.com/tag/hexo/</loc>
+        <lastmod>2016-07-25T13:05:28.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://kudotty.com/tag/hexo-theme-icarus/</loc>
+        <lastmod>2016-07-25T13:05:28.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://kudotty.com/tag/github-pages/</loc>
+        <lastmod>2016-07-25T13:05:28.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://kudotty.com/tag/nodejs/</loc>
+        <lastmod>2016-07-25T13:05:28.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://kudotty.com/tag/docpad/</loc>
+        <lastmod>2016-07-25T13:05:28.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
